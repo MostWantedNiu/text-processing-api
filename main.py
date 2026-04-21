@@ -6,6 +6,9 @@ import re
 app = FastAPI(
     title="Text Processing API",
     description="文本统计、繁简转换、格式清洗、大小写转换",
+    servers=[
+        {"url": "https://text-api-rzf4.onrender.com", "description": "Production server"}
+    ],
     version="1.0.0"
 )
 
